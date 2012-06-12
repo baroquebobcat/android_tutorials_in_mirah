@@ -1,4 +1,5 @@
 
+
 Mirah-ification of Android Tutorials
 ======================
 
@@ -7,6 +8,7 @@ I'm forking and Mirah-ifying the [tutorials](http://developer.android.com/resour
 features/problems
 -------
 * current pindah (0.1.2) and the current android sdk don't play nice
+
 ```
 $ rake debug
 rake aborted!
