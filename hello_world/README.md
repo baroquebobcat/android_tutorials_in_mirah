@@ -48,7 +48,7 @@ Create a New Android Project
 ---------------
 _skip all the Eclipse stuff._ It's in the original, if you want to check it out.
 
-Have you got your JRuby environment setup? If not, set it up with rvm, or the JRuby binary. Then install the pindah gem
+Have you got your JRuby environment setup? If not, set it up with rvm, or the JRuby binary. Then install the pindah gem (0.1.2 doesn't work with the android 4.0.3 and up)
 
     gem install pindah
 
