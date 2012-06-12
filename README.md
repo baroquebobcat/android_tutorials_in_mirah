@@ -3,6 +3,22 @@ Mirah-ification of Android Tutorials
 
 I'm forking and Mirah-ifying the [tutorials](http://developer.android.com/resources/browser.html?tag=tutorial).
 
+features/problems
+-------
+* current pindah (0.1.2) and the current android sdk don't play nice
+```
+$ rake debug
+rake aborted!
+org.apache.tools.ant.BuildException: 
+
+Error. You are using an obsolete build.xml
+You need to delete it and regenerate it using
+	android update project
+
+(See full trace by running task with --trace)
+```
+You may need to install it from source. Check https://github.com/mirah/pindah for instructions.
+
 
 Goals
 ----
