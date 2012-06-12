@@ -12,7 +12,7 @@ Goals
 Tutorials
 ------
 ## Hello World
-
+[original](http://developer.android.com/resources/tutorials/hello-world.html)
 ## Hello Views
 *TODO*
 * Layouts
