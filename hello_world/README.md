@@ -147,6 +147,33 @@ Finally, you pass the TextView to [setContentView()](http://developer.android.co
 There it is — "Hello, World" in Android! The next step, of course, is to see it running.
 
 
+Run the Application
+------------------
+
+Eclipse would make it easy to run the application, but we're using the command line. In theory, you should be able to do this:
+
+```
+rake debug:install
+```
+
+which would create a debug build of the project and install it on an emulator--possibly running the emulator if it wasn't already.
+
+For now do this:
+
+1. start up an emulator `$ emulator -avd my_avd` (assuming the Android SDK binaries are on your path).
+2. create the debug build `$ rake debug`
+3. install the debug build `$ rake installd` ( this bit doesn't work yet, but I've got a patch )
+4. run the adb shell `$ android/platform-tools/adb -e shell` and start your activity
+  `# am start -n com.example.helloandroid/com.example.helloandroid.HelloAndroid`
+
+
+The "Hello Android" you see in the grey bar is actually the application title. The Pindah generator creates this automatically (the string is defined in the res/values/strings.xml file and referenced by your AndroidManifest.xml file). The text below the title is the actual text that you have created in the TextView object.
+
+That concludes the basic "Hello World" tutorial, but you should continue reading for some more valuable information about developing Android applications.
+
+
+
+
 
 # Attribution
 
