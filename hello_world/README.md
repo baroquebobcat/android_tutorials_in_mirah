@@ -2,16 +2,16 @@ Hello, World
 =========================
 
 ###Note
-Pindah makes a lot of the build docs invalid. In particular, I'm not using Eclipse.
+Pindah makes a lot of the build docs invalid. In particular, I'm not using Eclipse. If you want to see the original tutorial it's [here](http://developer.android.com/resources/tutorials/hello-world.html). Attribution is on the bottom of the page.
 
 
 Creating the Project Without Eclipse (This)
 -------------
 As a developer, you know that the first impression of a development framework is how easy it is to write "Hello, World." Well, on Android, it's pretty easy. It's particularly easy if you're using Eclipse as your IDE, because we've provided a great plugin that handles your project creation and management to greatly speed up your development cycles.
 
-This tutorial assumes that you're using Eclipse. If you're using the command line, see [Building and Running from the Command Line](http://developer.android.com/guide/developing/building/building-cmdline.html). You can then return to this tutorial and ignore anything about Eclipse.
+We're using the command line. You can check out [Building and Running from the Command Line](http://developer.android.com/guide/developing/building/building-cmdline.html) to get an idea of how it works using ant, but Pindah's a bit different.
 
-Before you start, you should already have the SDK installed, and if you're using Eclipse, you should have installed the ADT plugin as well. If you have not installed these, see Installing the Android SDK and return here when you've completed the installation.
+Before you start, you should already have the SDK installed, and if you're using Eclipse, you should have installed the ADT plugin as well. If you have not installed these, see [Installing the Android SDK](http://developer.android.com/sdk/installing.html) and return here when you've completed the installation.
 
 
 
