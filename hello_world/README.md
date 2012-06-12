@@ -108,6 +108,46 @@ class HelloAndroid < Activity
 end
 ```
 
+Notice that the class is based on the Activity class. An [Activity](http://developer.android.com/reference/android/app/Activity.html) is a single application entity that is used to perform actions. An application may have many separate activities, but the user interacts with them one at a time. The [onCreate()](http://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)) method is called by the Android system when your Activity starts — it is where you should perform all initialization and UI setup. An activity is not required to have a user interface, but usually does.
+
+Now let's modify some code!
+
+
+
+Construct the UI
+-----------------------
+
+Take a look at the revised code below and then make the same changes to your HelloAndroid class. The lines that have been added have comments.
+
+```mirah
+package com.example.helloandroid
+
+import android.app.Activity
+import android.widget.TextView  # added
+
+class HelloAndroid < Activity
+  def onCreate(state)
+    super state
+    tv = TextView.new self      # added
+    tv.setText "Hello, Android" # added
+    setContentView tv           # added
+  end
+end
+```
+
+
+An Android user interface is composed of hierarchies of objects called Views. A [View](http://developer.android.com/reference/android/view/View.html) is a drawable object used as an element in your UI layout, such as a button, image, or (in this case) a text label. Each of these objects is a subclass of the View class and the subclass that handles text is [TextView](http://developer.android.com/reference/android/widget/TextView.html).
+
+In this change, you create a TextView with the class constructor, which accepts an Android [Context](http://developer.android.com/reference/android/content/Context.html) instance as its parameter. A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. The Activity class inherits from Context, and because your HelloAndroid class is a subclass of Activity, it is also a Context. So, you can pass _self_ as your Context reference to the TextView.
+
+Next, you define the text content with [setText()](http://developer.android.com/reference/android/widget/TextView.html#setText(java.lang.CharSequence)).
+
+Finally, you pass the TextView to [setContentView()](http://developer.android.com/reference/android/app/Activity.html#setContentView(android.view.View)) in order to display it as the content for the Activity UI. If your Activity doesn't call this method, then no UI is present and the system will display a blank screen.
+
+There it is — "Hello, World" in Android! The next step, of course, is to see it running.
+
+
+
 # Attribution
 
 Google was awesome and OSS licensed their content so that it could be remixed. All the tutorial content should have a paragraph at the bottom as follows, attributing it to the Android Open Source Project:
