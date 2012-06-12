@@ -1,3 +1,4 @@
+
 Mirah-ification of Android Tutorials
 ======================
 
@@ -17,6 +18,7 @@ You need to delete it and regenerate it using
 
 (See full trace by running task with --trace)
 ```
+
 You may need to install it from source. Check https://github.com/mirah/pindah for instructions.
 
 
