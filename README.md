@@ -1,7 +1,7 @@
 Mirah-ification of Android Tutorials
 ======================
 
-I'm forking and Mirah-ifying the tutorials.
+I'm forking and Mirah-ifying the [tutorials](http://developer.android.com/resources/browser.html?tag=tutorial).
 
 
 Goals
