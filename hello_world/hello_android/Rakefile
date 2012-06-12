@@ -1,0 +1,7 @@
+require "rubygems"
+require "pindah"
+
+Pindah.spec = {
+  :name => "hello_android",
+  :target_version => "2.1"
+}
